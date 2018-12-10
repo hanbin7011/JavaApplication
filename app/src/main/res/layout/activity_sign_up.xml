@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView_signup"
+    android:windowSoftInputMode="adjustResize">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout_signup">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/person"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView_signup"/>
+
+        <EditText
+            android:id="@+id/input_username_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="username"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/input_password_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="repeat password"
+            android:inputType="textPassword"
+            android:layout_margin="5dp"
+            android:id="@+id/input_repeat_password_signup"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:layout_margin="5dp"
+            android:id="@+id/input_email_signup"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="first name"
+                android:inputType="textEmailAddress"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:id="@+id/input_firstname_signup"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:hint="last name"
+                android:inputType="textEmailAddress"
+                android:layout_margin="5dp"
+                android:id="@+id/input_lastname_signup"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_signup_signup"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold|italic"
+                android:textColor="#87cefa"
+                android:layout_marginTop="15dp"
+                android:text="Sign Up" />
+
+            <Button
+                android:id="@+id/btn_cancel_signup"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold|italic"
+                android:textColor="#87cefa"
+                android:layout_marginTop="15dp"
+                android:text="Cancel" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/relativeLayout_email_confirm">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="35dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hAn"
+            android:textSize="32dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the code from your email"
+            android:layout_marginTop="17dp"
+            android:textSize="17dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sent to example@gmail.com"
+            android:textSize="13dp"
+            android:id="@+id/TextView_email_email_confirm"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confrimation Code"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:id="@+id/input_code_email_confirm"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_confirm_email_confirm"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold|italic"
+                android:textColor="#87cefa"
+                android:paddingLeft="0dp"
+                android:layout_marginLeft="0dp"
+                android:text="confirm" />
+
+            <Button
+                android:id="@+id/btn_cancel_email_confirm"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold|italic"
+                android:textColor="#87cefa"
+                android:paddingRight="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Cancel" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did not get the email?"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/btn_sendEmail_email_confirm"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textColor="#87cefa"
+            android:paddingTop="0dp"
+            android:paddingLeft="0dp"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="13dp"
+            android:text="Send email again" />
+
+        <Button
+            android:id="@+id/btn_changeEmail_email_confirm"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textColor="#87cefa"
+            android:paddingTop="0dp"
+            android:paddingLeft="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="13dp"
+            android:text="Change email address" />
+
+    </LinearLayout>
+</RelativeLayout>
